@@ -7,10 +7,19 @@
     <a
       class="btn btn-download"
       :href="`data:${prepareDownload()}`"
-      download="data.json"
-    >Download</a>
+      :download="`settings-${settings.uuid}.json`"
+      v-if="settings.items.length"
+    >
+      Download
+    </a>
     <form-master :settings="settings" :key="settings.uuid" />
-    <button @click="resetForm" class="btn btn-reset">Reset Form</button>
+    <button
+      @click="resetForm"
+      class="btn btn-reset"
+      v-if="settings.items.length"
+    >
+      Reset Form
+    </button>
   </div>
 </template>
 

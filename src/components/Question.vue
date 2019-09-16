@@ -70,7 +70,7 @@ export default {
 
       return responseType
         ? {
-          name: responseType && `${responseType.charAt(0).toUpperCase()}${responseType.slice(1)}`,
+          name: `${responseType.charAt(0).toUpperCase()}${responseType.slice(1)}`,
           value: responseType,
         }
         : {};

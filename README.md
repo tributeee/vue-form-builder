@@ -1,4 +1,7 @@
-# Simple Vue.js form builder with ability to import/export settings from/to JSON configuration
+# Simple Vue.js form builder
+
+### Form builder with ability to import/export form settings from/to JSON configuration
+### Author: Uros Mancic
 
 ## Project setup
 ```
@@ -15,11 +18,6 @@ yarn run serve
 yarn run build
 ```
 
-### Run your tests
-```
-yarn run test
-```
-
 ### Lints and fixes files
 ```
 yarn run lint
@@ -29,6 +27,3 @@ yarn run lint
 ```
 yarn run test:unit
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
