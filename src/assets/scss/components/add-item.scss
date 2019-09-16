@@ -1,0 +1,28 @@
+.add-group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+
+  .add-new {
+    width: 200px;
+    margin-left: 10px;
+  }
+}
+
+.add-new {
+  cursor: pointer;
+  background: #fff;
+  border: 2px dashed #e4e4e4;
+  border-radius: 10px;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+
+  i {
+    color: #e4e4e4;
+    margin: 0 10px;
+    font-size: 30px;
+  }
+}

@@ -5,7 +5,7 @@
       :text="item.title"
       :tag="'h3'"
     />
-    <div class="section-content">
+    <div class="section">
       <items-wrapper
         v-for="(child, index) in item.items"
         :key="index"

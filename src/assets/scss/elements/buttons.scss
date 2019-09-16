@@ -1,0 +1,47 @@
+.btn {
+  @include button-reset;
+  background-color: #239fd2;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 5px;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  color: #ffffff;
+
+  &:active {
+    transform: translateY(1px);
+    filter: saturate(150%);
+  }
+
+  &:hover {
+    color: #239fd2;
+    border-color: currentColor;
+    background-color: white;
+  }
+
+  &.btn-reset {
+    background: #e45c5c;
+
+    &:hover {
+      color: #e45c5c;
+      border-color: currentColor;
+      background-color: white;
+    }
+  }
+
+  &.btn-download {
+    background: #6bab73;
+
+    &:hover {
+      color: #6bab73;
+      border-color: currentColor;
+      background-color: white;
+    }
+  }
+
+  input {
+    display: none;
+  }
+}

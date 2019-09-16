@@ -5,7 +5,7 @@
       :text="page.title"
       :tag="'h2'"
     />
-    <div class="page-content">
+    <div class="page">
       <items-wrapper
         v-for="(item, index) in page.items"
         :key="index"
