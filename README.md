@@ -1,4 +1,4 @@
-# form-builder
+# Simple Vue.js form builder with ability to import/export settings from/to JSON configuration
 
 ## Project setup
 ```
