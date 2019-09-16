@@ -1,0 +1,146 @@
+@import "variables";
+
+@mixin button-reset {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+body {
+  background: #f7f7f5;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #636363;
+
+  #app {
+    margin-top: 20px;
+
+    .editable {
+      display: flex;
+      align-items: center;
+
+      i {
+        cursor: pointer;
+        margin-right: 10px;
+        padding: 3px;
+        border-radius: 4px;
+        &:hover {
+          background: #e4e4e4;
+        }
+      }
+
+      .content- {
+        display: block;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        &h2 {
+          font-size: 1.5em;
+          margin-block-start: 0.83em;
+          margin-block-end: 0.83em;
+        }
+        &h3 {
+          font-size: 1.17em;
+          margin-block-start: 1em;
+          margin-block-end: 1em;
+          font-weight: normal;
+        }
+        &p {
+          font-size: 1em;
+        }
+      }
+    }
+
+    .page-content {
+      background: #fff;
+      border: 1px solid #e4e4e4;
+      border-radius: 10px;
+      padding: 10px 25px;
+    }
+
+    .section-content {
+      margin-left: 30px;
+    }
+
+    .add-group {
+      display: flex;
+      justify-content: flex-start;
+      align-items: left;
+
+      .add-new {
+        width: 200px;
+        margin-left: 10px;
+      }
+    }
+
+    .add-new {
+      cursor: pointer;
+      background: #fff;
+      border: 2px dashed #e4e4e4;
+      border-radius: 10px;
+      padding: 10px 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+
+      i {
+        color: #e4e4e4;
+        margin: 0 10px;
+        font-size: 30px;
+      }
+    }
+
+    .btn {
+      @include button-reset;
+      background-color: #239fd2;
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      margin: 0 5px;
+      border: solid 1px transparent;
+      border-radius: 4px;
+      padding: 0.5em 1em;
+      color: #ffffff;
+
+      &:active {
+        transform: translateY(1px);
+        filter: saturate(150%);
+      }
+
+      &:hover {
+        color: #239fd2;
+        border-color: currentColor;
+        background-color: white;
+      }
+
+      &.btn-reset {
+        background: #e45c5c;
+
+        &:hover {
+          color: #e45c5c;
+          border-color: currentColor;
+          background-color: white;
+        }
+      }
+
+      &.btn-download {
+        background: #6bab73;
+
+        &:hover {
+          color: #6bab73;
+          border-color: currentColor;
+          background-color: white;
+        }
+      }
+
+      input {
+        display: none;
+      }
+    }
+  }
+}
