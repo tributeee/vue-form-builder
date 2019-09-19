@@ -78,6 +78,9 @@ export default {
       const self = this;
       _.each(collection, (child) => {
         item = self.findItem(child.items, id);
+        if (item) {
+          return false;
+        }
       });
 
       return item;
